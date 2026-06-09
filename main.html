@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holtex</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+
+        <a href="#contact" class="contact-btn">
+            Contact Us
+        </a>
+
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="workshop-bg"></div>
+
+            <img src="workExamples/LOGO.png" class="logo">
+
+           <h1>HOLTEX <span> <br> DIZAJN</span></h1>
+
+            <p>
+                Svaki proizvod prolazi kroz proces mjerenja, rezanja, varenja i završne obrade kako bi trajao godinama.
+            </p>
+
+            <button class="cta-btn" onclick="document.getElementById('categories').scrollIntoView({behavior: 'smooth'})">
+                Naši proizvodi
+            </button>
+
+        </div>
+
+        <div class="hero-image">
+            <img id="heroSlideshow" src="animationpics/picture1.png">
+        </div>
+
+    </section>
+
+
+
+    <!-- ABOUT -->
+
+    <section class="about">
+
+        <div class="about-content">
+
+            <span class="section-tag">O Nama</span>
+
+            <h2>
+                Izrada i izdržljivost
+            </h2>
+
+            <p>
+                Holtext je mlada, ambiciozna firma koju čini stručan i energičan tim zaljubljenika u precizan rad, dizajn i kvalitet. Bavimo se izradom i obradom metala i drveta, stvarajući jedinstvene projekte koji spajaju funkcionalnost i estetiku. Bez obzira da li je u pitanju moderan, klasičan ili industrijski stil naš cilj je da svaka ideja postane stvarnost.
+            </p>
+
+        </div>
+
+        <div class="about-image">
+            <img src="workExamples/IMG_1245.jpeg">
+        </div>
+
+    </section>
+
+
+
+    <!-- CATEGORY SECTION -->
+
+    <section id="categories" class="categories">
+
+        <h2>Naši proizvodi</h2>
+
+        <div class="category-buttons">
+
+            <button onclick="loadGallery('all')" class="category active" data-category="all">Sve</button>
+
+            <button onclick="loadGallery('fences')" class="category" data-category="fences">Ograde</button>
+
+            <button onclick="loadGallery('tables')" class="category" data-category="tables">Stolovi</button>
+
+            <button onclick="loadGallery('chairs')" class="category" data-category="chairs">Stolice</button>
+
+            <button onclick="loadGallery('stairs')" class="category" data-category="stairs">Stepenice</button>
+
+            <button onclick="loadGallery('shelves')" class="category" data-category="shelves">Police</button>
+
+            <button onclick="loadGallery('other')" class="category" data-category="other">Ostalo</button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PRODUCT GALLERY -->
+
+    <section class="gallery" id="gallery">
+
+    </section>
+
+
+
+    <!-- LIGHTBOX -->
+
+    <div class="lightbox">
+
+        <img class="lightbox-image">
+
+    </div>
+
+
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact">
+
+        <h2>
+            Pravimo zajedno!
+        </h2>
+
+        <p class="muted">Broj: +387 62 114 404</p>
+
+        <div class="contact-links">
+
+            <a href="https://www.facebook.com/people/Holtext/61572747503954/?mibextid=wwXIfr&rdid=lco1ZDlwLP5RIhFF&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GDzQF1JWF%2F%3Fmibextid%3DwwXIfr" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/holtext_dizajn" target="_blank" >Instagram</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=holtext.official@gmail.com" target="_blank">Email</a>
+
+        </div>
+
+    </section>
+
+
+
+    <script src="handler.js"></script>
+
+</body>
+</html>
